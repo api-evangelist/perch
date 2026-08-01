@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  Probed perch.fit and its redirect target catapult.com for standard
+  /.well-known/ discovery documents. perch.fit is a bare 301 redirect to
+  www.catapult.com/perch (Perch was acquired by Catapult and has no distinct
+  API domain). The only hit is Catapult's corporate security.txt on the parent
+  host; it is malformed (no Contact: field, points to a Google Form) and belongs
+  to the acquiring parent, not a Perch-specific API surface.
+host: www.catapult.com
+notes: >-
+  perch.fit/.well-known/security.txt returns 200 only because the whole host
+  301-redirects to www.catapult.com. Perch itself publishes no OpenID, OAuth
+  authorization-server, api-catalog, ai-plugin, or llms discovery documents.
+documents:
+- path: /.well-known/security.txt
+  host: www.catapult.com
+  status: 200
+  file: perch-security.txt
+  note: corporate security.txt of acquiring parent Catapult; malformed (no Contact field)
+- path: /.well-known/openid-configuration
+  host: www.catapult.com
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  host: www.catapult.com
+  status: 404
+- path: /.well-known/api-catalog
+  host: www.catapult.com
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: www.catapult.com
+  status: 404
+- path: /llms.txt
+  host: www.catapult.com
+  status: 404

@@ -1,0 +1,14 @@
+{
+  "repo": "perch",
+  "feeds": [
+    {
+      "source": "https://www.catapult.com/pricing",
+      "feed_url": "https://www.catapult.com/feed",
+      "title": "",
+      "saved": 2,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-07-25T15:00:33Z"
+}

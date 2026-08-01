@@ -1,22 +1,48 @@
 aid: perch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/perch.png
 name: Perch
-description: 'Perch is a company surfaced as a portfolio company of softbank-vision-fund, techstars and
-  added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Perch is a computer-vision weight-room performance monitoring system that
+  captures athlete movement — velocity-based training, jump testing, and
+  strength programming — from 3D cameras mounted on the rack, without wearables
+  or tethers. Spun out of MIT and backed by SoftBank Vision Fund and Techstars,
+  Perch was acquired by sports-technology company Catapult; the perch.fit domain
+  now 301-redirects to catapult.com/perch, where the product is sold and
+  supported as part of Catapult's athlete-monitoring suite. Perch exposes no
+  public API, developer portal, SDK, or machine-readable API specification —
+  this profile is retained as an identity record for the acquired brand.
 url: https://raw.githubusercontent.com/api-evangelist/perch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - softbank-vision-fund
 - techstars
+x-acquired-by: catapult
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Sports Technology
+- Athlete Monitoring
+- Computer Vision
+- Fitness
+- Strength Training
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +51,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://perch.fit/
+  url: https://www.catapult.com/perch
+- type: Support
+  url: https://www.catapult.com/support
+- type: Pricing
+  url: https://www.catapult.com/pricing
+- type: Blog
+  url: https://www.catapult.com/learning-library
+- type: PrivacyPolicy
+  url: https://www.catapult.com/privacy-policy
+- type: TermsOfService
+  url: https://www.catapult.com/standard-terms
+- type: WellKnown
+  url: well-known/perch-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
