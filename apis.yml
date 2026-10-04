@@ -50,7 +50,7 @@ tags:
 - Consumer
 - Sports Technology
 - Athlete Monitoring
-- Computer-Vision
+- Computer Vision
 - Fitness
 - Strength Training
 - Acquired
@@ -63,6 +63,7 @@ tags_raw:
 - Fitness
 - Strength Training
 - Acquired
+- Computer-Vision
 apis: []
 maintainers:
 - FN: Kin Lane
